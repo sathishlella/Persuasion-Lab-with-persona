@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Technique Tracking</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every message is analyzed for persuasion techniques in real-time — reciprocity, 
+                Every message is analyzed for persuasion techniques in real-time reciprocity, 
                 social proof, authority, scarcity, and more.
               </p>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
       <footer className="py-8 border-t border-border/50">
         <div className="container text-center space-y-2">
           <p className="text-sm text-muted-foreground">
-            AI Physical Store Salesman Simulator — In-Store Persuasion & Behavioral Research Platform
+            AI Physical Store Salesman Simulator: In-Store Persuasion & Behavioral Research Platform
           </p>
           <p className="text-xs text-muted-foreground/50">
             Designed by{" "}
