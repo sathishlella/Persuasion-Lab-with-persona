@@ -476,9 +476,10 @@ export default function Chat() {
               href="https://www.linkedin.com/in/sathishlella/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline text-[10px] text-muted-foreground/40 hover:text-accent/70 transition-colors duration-200"
+              className="hidden md:inline-flex items-center gap-1.5 text-[11px] font-medium text-foreground/70 hover:text-accent transition-colors duration-200 px-3 py-1.5 rounded-lg border border-border/40 hover:border-accent/30 hover:bg-accent/5"
             >
-              Designed by <span className="underline underline-offset-2 decoration-transparent hover:decoration-accent/40">Sathish Lella</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-accent/60 animate-pulse" />
+              Designed by <span className="underline underline-offset-2 decoration-accent/30 hover:decoration-accent">Sathish Lella</span>
             </a>
             <button
               onClick={() => navigate("/analytics")}
