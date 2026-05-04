@@ -162,7 +162,7 @@ function StartScreen({ model, preference, setPreference, onStart, isPending }: {
             value={preference}
             onChange={(e) => setPreference(e.target.value)}
             placeholder="e.g., iPhone 16 Pro Max"
-            className={`w-full px-4 py-3 rounded-xl bg-card/60 border border-border/60 text-foreground placeholder:text-muted-foreground/50 text-sm focus:outline-none focus:ring-2 transition-all ${meta.ring} backdrop-blur-sm`}
+            className={`w-full px-4 py-3 rounded-xl bg-secondary/80 border-2 border-border/80 text-foreground placeholder:text-muted-foreground/70 text-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-offset-background transition-all ${meta.ring} backdrop-blur-sm shadow-lg shadow-black/20`}
             onKeyDown={(e) => e.key === "Enter" && onStart()}
             disabled={isPending}
           />
