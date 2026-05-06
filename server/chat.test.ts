@@ -5,13 +5,17 @@ import type { TrpcContext } from "./_core/context";
 // Mock the AI model invocation
 vi.mock("./ai-models", () => ({
   invokeModel: vi.fn().mockResolvedValue({
-    choices: [{ message: { content: "Welcome! What kind of phone are you looking for?" } }],
-    usage: { prompt_tokens: 100, completion_tokens: 50 },
+    result: {
+      choices: [{ message: { content: "Welcome! What kind of phone are you looking for?" } }],
+      usage: { prompt_tokens: 100, completion_tokens: 50 },
+    },
+    responseTimeMs: 420,
   }),
   analyzePersuasionTechnique: vi.fn().mockResolvedValue({
     technique: "liking",
     phase: "rapport",
     isConversion: false,
+    sentimentScore: 25,
   }),
   getActiveModels: vi.fn().mockReturnValue([
     { modelType: "gpt", displayName: "GPT", isActive: true },
